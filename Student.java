@@ -47,7 +47,6 @@ public class Student {
         }
     }while(1 != 0);
 
-        System.out.println("ENROLLED IN: " + courses);
     }
     //view balance
     public void viewBalance(){
@@ -67,7 +66,8 @@ public class Student {
     }
     //show status
     public String toString(){
-        return "Name: " + firstName + " " + lastName + "\nCourses enrolled: " + courses + "\nBalance: $" + tuitionBalance;
+        return "Name: " + firstName + " " + lastName + "nGrade level: " + gradeYear + "\nStudent id: " + studentId +
+               "\nCourses enrolled: " + courses + "\nBalance: $" + tuitionBalance;
     }
 
 }
