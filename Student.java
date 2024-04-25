@@ -23,7 +23,6 @@ public class Student {
         this.gradeYear = sc.nextInt();
 
         setStudentId();
-        System.out.println(firstName + " " + lastName + " " + gradeYear + " " + studentId); 
     }
     //generate an id
     private void setStudentId(){
@@ -67,7 +66,7 @@ public class Student {
 
     }
     //show status
-    public String showInfo(){
+    public String toString(){
         return "Name: " + firstName + " " + lastName + "\nCourses enrolled: " + courses + "\nBalance: $" + tuitionBalance;
     }
 
