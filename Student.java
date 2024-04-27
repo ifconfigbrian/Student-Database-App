@@ -35,12 +35,12 @@ public class Student {
    
     //enroll in courses
      public void enroll(){
-        //enter a loop,user hits Q to quit
+        //enter a loop,user hits * to quit
         do{
-        System.out.println("Enter course to enroll(Q to quit): ");
+        System.out.println("Enter course to enroll(* to quit): ");
         sc = new Scanner(System.in);
         String course = sc.nextLine();
-        if (!course.equals("Q")) {
+        if (!course.equals("*")) {
             courses = courses + "\n " + course;
             tuitionBalance = tuitionBalance + costOfCourse;
             
