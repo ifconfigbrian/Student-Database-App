@@ -14,6 +14,7 @@ public class StudentDatabaseMain {
             students[n].enroll();
             students[n].payTuition();
             System.out.println(students[n].toString());
+            sc.close();
 
         }
     }
