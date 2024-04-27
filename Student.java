@@ -11,8 +11,9 @@ public class Student {
     private static int id = 1000;
 
     //constructor:prompt user to enter students name and year
+    Scanner sc;
     public Student(){
-        Scanner sc = new Scanner(System.in);
+         sc = new Scanner(System.in);
         System.out.print("Enter Students first name: ");
         this.firstName = sc.nextLine();
 
@@ -37,7 +38,7 @@ public class Student {
         //enter a loop,user hits Q to quit
         do{
         System.out.println("Enter course to enroll(Q to quit): ");
-        Scanner sc = new Scanner(System.in);
+        sc = new Scanner(System.in);
         String course = sc.nextLine();
         if (!course.equals("Q")) {
             courses = courses + "\n " + course;
@@ -59,12 +60,12 @@ public class Student {
     public void payTuition(){
         viewBalance();
         System.out.print("Enter Amount to pay: $");
-        Scanner sc = new Scanner(System.in);
+        sc = new Scanner(System.in);
        int payment = sc.nextInt();
         tuitionBalance = tuitionBalance - payment;
         System.out.println("Thankyou for payment of: $" + payment);
         viewBalance();
-        
+        sc.close();
 
     }
     //show status
